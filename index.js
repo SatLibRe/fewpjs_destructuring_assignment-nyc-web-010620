@@ -28,15 +28,31 @@ const k_muppet = {
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+<<<<<<< HEAD
 let [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ")
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
 let [Bessie, , Dolly, Babe, Little] = farmAnimals.split(" ")
+=======
+
+const [moo, neigh, baa, oink, cluck ] = 
+farmAnimals.split(" ")
+
+// 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
+
+const [Bessie, ,Dolly, Babe, Little] = 
+farmAnimals.split(" ")
+
+>>>>>>> aa5556ae93da028f803ed91147e7cba4686f1dff
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.
 let [black_and_white, , black, pink, ] = farmAnimals.split(" ")
+
+const [black_and_white, ,black, pink, ,] = 
+farmAnimals.split(" ")
 
 // Arrays
 
 // 4. Use destructuring to assign appropriate variables using the color names.
+<<<<<<< HEAD
 let [red, orange, yellow, green, blue, indigo, violet] = colors
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
 let [r, o, y, g, b, , v] = colors
@@ -46,6 +62,29 @@ let [ , , , , , indg, ] = colors
 
 // 7. Use destructuring to assign all appropriate variables using the keys as the variable names
 let {name, color, song, job, partner} = muppet
+=======
+
+const [red, orange, yellow, green, blue, indigo, violet] = 
+colors
+
+// 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
+
+const [r, o, y, g, b, ,v] = 
+colors
+
+// 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
+
+const [, , , , , indg, ] = 
+colors
+
+
+// Objects
+
+// 7. Use destructuring to assign all appropriate variables using the keys as the variable names
+
+const { name, color, song, job, partner }
+k_muppet; 
+>>>>>>> aa5556ae93da028f803ed91147e7cba4686f1dff
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
 let {k_color, k_job, k_partner} = k_muppet
